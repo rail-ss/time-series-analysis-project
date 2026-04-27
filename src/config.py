@@ -1,0 +1,69 @@
+"""Общие настройки проекта анализа временных рядов."""
+
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+RAW_DATA_PATH = PROJECT_ROOT / "data" / "raw" / "household_power_consumption.txt"
+PREPARED_DATA_PATH = PROJECT_ROOT / "data" / "processed" / "prepared_time_series.csv"
+PROCESSED_DATA_PATH = PREPARED_DATA_PATH
+ANOMALY_DATA_PATH = PROJECT_ROOT / "data" / "processed" / "time_series_with_anomalies.csv"
+
+REPORTS_DIR = PROJECT_ROOT / "reports"
+TABLES_DIR = REPORTS_DIR / "tables"
+FIGURES_DIR = REPORTS_DIR / "figures"
+OUTPUTS_DIR = PROJECT_ROOT / "outputs"
+FORECASTS_DIR = OUTPUTS_DIR / "forecasts"
+MODELS_DIR = PROJECT_ROOT / "models"
+
+# Основные параметры временного ряда
+TARGET_COLUMN = "Global_active_power"
+WORKING_TARGET = "y"
+
+FREQUENCY = "h"
+FORECAST_HORIZON = 24
+
+DAILY_SEASON_LENGTH = 24
+WEEKLY_SEASON_LENGTH = 168
+
+DEFAULT_SERIES_ID = "household_power"
+RANDOM_STATE = 42
+
+# Параметры backtesting
+BACKTEST_WINDOWS = 3
+BACKTEST_STEP = FORECAST_HORIZON
+MAX_TRAIN_HISTORY = 24 * 365 * 4
+
+# Параметры DL-моделей
+NEURAL_MAX_STEPS = 60
+NEURAL_INPUT_SIZE = WEEKLY_SEASON_LENGTH
+NEURAL_MAX_TRAIN_SIZE = 24 * 365
+NEURAL_TRAIN_LAST_DAYS = 365
+
+# Уровни интервального прогноза
+PREDICTION_LEVELS = [80, 95]
+
+# Дополнительные имена параметров, используемые в отдельных скриптах
+FREQ = FREQUENCY
+HORIZON = FORECAST_HORIZON
+
+SEASON_LENGTH = DAILY_SEASON_LENGTH
+SEASON_LENGTH_DAY = DAILY_SEASON_LENGTH
+SEASON_LENGTH_WEEK = WEEKLY_SEASON_LENGTH
+
+DAILY_SEASONAL_PERIOD = DAILY_SEASON_LENGTH
+WEEKLY_SEASONAL_PERIOD = WEEKLY_SEASON_LENGTH
+
+PROCESSED_DATA_PATH = PREPARED_DATA_PATH
+
+EDA_RESULTS_PATH = REPORTS_DIR / "eda_results.md"
+STATISTICAL_REPORT_PATH = REPORTS_DIR / "statistical_models.md"
+ANOMALY_REPORT_PATH = REPORTS_DIR / "anomaly_detection.md"
+ML_REPORT_PATH = REPORTS_DIR / "machine_learning_models.md"
+NEURAL_REPORT_PATH = REPORTS_DIR / "neural_models.md"
+DATA_DRIVEN_REPORT_PATH = REPORTS_DIR / "data_driven_models.md"
+PIPELINE_REPORT_PATH = REPORTS_DIR / "pipeline.md"
+FINAL_REPORT_PATH = REPORTS_DIR / "REPORT.md"
+
+MACHINE_LEARNING_REPORT_PATH = ML_REPORT_PATH
+NEURAL_MODELS_REPORT_PATH = NEURAL_REPORT_PATH

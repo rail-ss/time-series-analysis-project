@@ -1,0 +1,2 @@
+model,residual_mean,residual_std,residual_mae,residual_median,residual_lag1_autocorr,coverage_80,coverage_95,ljung_box_pvalue_lag_24
+seasonal_window_average,-0.025968650793650787,0.42583981872647186,0.3305925925925926,-0.0723404761904762,0.4566591298997004,1.0,1.0,4.059141377064404e-08

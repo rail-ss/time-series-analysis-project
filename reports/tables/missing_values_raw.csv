@@ -1,0 +1,9 @@
+column,missing_count,missing_share,dtype
+Global_active_power,25979,0.012518437457686004,float64
+Global_reactive_power,25979,0.012518437457686004,float64
+Voltage,25979,0.012518437457686004,float64
+Global_intensity,25979,0.012518437457686004,float64
+Sub_metering_1,25979,0.012518437457686004,float64
+Sub_metering_2,25979,0.012518437457686004,float64
+Sub_metering_3,25979,0.012518437457686004,float64
+ds,0,0.0,datetime64[ns]

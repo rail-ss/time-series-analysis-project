@@ -1,0 +1,5 @@
+method,anomalies,share_percent
+rolling_z_score,309,0.893
+seasonal_iqr,363,1.049
+isolation_forest,345,0.997
+selected_method,363,1.049

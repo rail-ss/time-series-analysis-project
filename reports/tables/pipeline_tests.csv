@@ -1,0 +1,7 @@
+test,status,details
+required_columns,pass,"Проверка обязательных колонок unique_id, ds, y."
+no_duplicate_timestamps,pass,Количество дублирующихся временных меток: 0.
+no_missing_target,pass,Количество пропусков в y: 0.
+regular_hourly_frequency,pass,Нерегулярных шагов: 0; ожидаемый шаг: 1 час.
+enough_history,pass,Наблюдений: 34589; минимум для недельной сезонности и горизонта: 192.
+non_negative_target,pass,Доля отрицательных значений y: 0.0000.

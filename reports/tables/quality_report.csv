@@ -1,0 +1,43 @@
+block,metric,value
+raw,rows,2075259
+raw,columns,8
+raw,date_min,2006-12-16 17:24:00
+raw,date_max,2010-11-26 21:02:00
+raw,missing_dates,0
+raw,duplicate_dates,0
+raw,most_common_step,0 days 00:01:00
+raw,min_step,0 days 00:01:00
+raw,max_step,0 days 00:01:00
+raw,missing_target,25979
+raw,target_min,0.076
+raw,target_max,11.122
+raw,target_mean,1.0916150365006245
+raw,target_median,0.602
+hourly_before_fill,rows,34589
+hourly_before_fill,columns,2
+hourly_before_fill,date_min,2006-12-16 17:00:00
+hourly_before_fill,date_max,2010-11-26 21:00:00
+hourly_before_fill,missing_dates,0
+hourly_before_fill,duplicate_dates,0
+hourly_before_fill,most_common_step,0 days 01:00:00
+hourly_before_fill,min_step,0 days 01:00:00
+hourly_before_fill,max_step,0 days 01:00:00
+hourly_before_fill,missing_target,421
+hourly_before_fill,target_min,0.12400000000000001
+hourly_before_fill,target_max,6.560533333333334
+hourly_before_fill,target_mean,1.0917275550574597
+hourly_before_fill,target_median,0.8028500000000001
+prepared,rows,34589
+prepared,columns,3
+prepared,date_min,2006-12-16 17:00:00
+prepared,date_max,2010-11-26 21:00:00
+prepared,missing_dates,0
+prepared,duplicate_dates,0
+prepared,most_common_step,0 days 01:00:00
+prepared,min_step,0 days 01:00:00
+prepared,max_step,0 days 01:00:00
+prepared,missing_target,0
+prepared,target_min,0.12400000000000001
+prepared,target_max,6.560533333333334
+prepared,target_mean,1.092487827051242
+prepared,target_median,0.8068333333333334
